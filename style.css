@@ -1,33 +1,90 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header styling */
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
+header p {
+    margin: 10px 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation menu styling */
+nav {
+    background: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Main content styling */
 main {
-    padding: 1rem;
+    padding: 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 h2 {
     color: #333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
 }
 
 ul {
@@ -36,18 +93,33 @@ ul {
 }
 
 ul li {
-    background: #f4f4f4;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
     border-left: 5px solid #333;
+    border-radius: 5px;
 }
 
+/* Footer styling */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
+    padding: 20px 0;
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
 }
